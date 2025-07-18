@@ -53,14 +53,3 @@ Domain Layer: The core of the application. It contains the business logic (Use C
 Data Layer: Responsible for all data operations. It implements the repository contracts defined in the Domain layer and handles communication with the API and local storage.
 Presentation Layer: The UI of the application. It contains all the screens, widgets, and BLoCs responsible for managing the UI state and reacting to user input.
 
-📁 Project Structure
-The project follows a feature-first structure, where code is organized by application features.
-
-lib/
-├── core/               # Shared code: DI, navigation, theme, etc.
-└── features/           # Top-level directory for all app features.
-    ├── artwork/        # Central feature for artwork data and domain logic.
-    ├── favorites/      # The Favorites tab UI and BLoC.
-    ├── quiz/           # The Quiz tab UI and BLoC.
-    ├── search/         # The Search tab UI and BLoC.
-    └── shell/          # The main app shell with the Bottom Navigation Bar.
